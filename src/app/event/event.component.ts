@@ -4,9 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-event',
   template: `<div class="d-flex justify-content-center">
               Upcoming Angular Events 
-              {{event1|json}}
             </div>
-            <hr/>`,
+            <hr/>
+            <app-evet-thumbnail [event]="event1"></app-evet-thumbnail>`,
   styleUrls: ['./event.component.css']
 })
 export class EventComponent implements OnInit {
