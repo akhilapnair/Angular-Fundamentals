@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
               Upcoming Angular Events 
             </div>
             <hr/>
-            <app-evet-thumbnail [event]="event1"></app-evet-thumbnail>`,
+            <app-evet-thumbnail [event]="event1" (buttonClick)="handleClick()"></app-evet-thumbnail>`,
   styleUrls: ['./event.component.css']
 })
 export class EventComponent implements OnInit {
@@ -31,5 +31,8 @@ export class EventComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  handleClick(){
+    console.log('@output working');
+    
+  }
 }
