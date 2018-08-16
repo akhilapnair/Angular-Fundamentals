@@ -12,6 +12,9 @@ export class EvetThumbnailComponent implements OnInit {
 
   ngOnInit() {
   }
+  logChange(){
+    console.log('heree');
+  }
   submit(){
     console.log('clicked')
     this.buttonClick.emit();

@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
               Upcoming Angular Events 
             </div>
             <hr/>
-            <app-evet-thumbnail [event]="event1" (buttonClick)="handleClick()"></app-evet-thumbnail>`,
+            <app-evet-thumbnail #thumbnail [event]="event1" (buttonClick)="handleClick()"></app-evet-thumbnail>
+            <button class="btn btn-primary" (click)="thumbnail.logChange()">click to see</button>`,
   styleUrls: ['./event.component.css']
 })
 export class EventComponent implements OnInit {
