@@ -7,12 +7,12 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  testResponse: any;
   constructor(private service:AppService){
-    let data;
-    this.service.get_products().subscribe(obj=>{
-     data = obj;
-    });
-    console.log(data)
+    this.service.get_products().subscribe(
+      data => this.testResponse = data
+  );
+  console.log("I CANT SEE DATA HERE: ", this.testResponse);
   }
   title = 'app';
 }
