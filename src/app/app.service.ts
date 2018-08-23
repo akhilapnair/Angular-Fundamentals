@@ -12,7 +12,7 @@ constructor(private httpClient : HttpClient) {
 }
 
 get_products(){
-return this.httpClient.get(this.baseUrl + '/comments').map(data=>{
+return this.httpClient.get(this.baseUrl + '/event').map(data=>{
     data
     console.log('sss',data)
 });
