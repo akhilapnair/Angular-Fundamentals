@@ -9,10 +9,10 @@ import { AppService } from './app.service';
 export class AppComponent {
   testResponse: any;
   constructor(private service:AppService){
-    this.service.get_products().subscribe(
-      data => this.testResponse = data
-  );
-  console.log("I CANT SEE DATA HERE: ", this.testResponse);
+  //   this.service.get_products().subscribe(
+  //     data => this.testResponse = data
+  // );
+  // console.log("I CANT SEE DATA HERE: ", this.testResponse);
   }
   title = 'app';
 }
