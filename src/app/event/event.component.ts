@@ -8,7 +8,12 @@ import { AppService } from '../app.service';
               Upcoming Angular Events 
             </div>
             <hr/>
-            <app-evet-thumbnail *ngFor="let event of eventData"[event]="event" (buttonClick)="handleClick()"></app-evet-thumbnail>`,
+            <div class="row">
+            <div class="col-md-5" *ngFor="let event of eventData">
+            <app-evet-thumbnail [event]="event" (buttonClick)="handleClick()"></app-evet-thumbnail>
+            </div>
+            </div>
+            `,
   styleUrls: ['./event.component.css']
 })
 export class EventComponent implements OnInit {

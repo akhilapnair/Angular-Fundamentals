@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: rgb(75, 89, 105);
-   color:white;
-}
-.nav{
+    color:white;
+    }
+    .nav{
     background-color:lightgrey;
 }
 .card{
-    background-color:lightgrey;
+    background-color:#bbb;
 }
