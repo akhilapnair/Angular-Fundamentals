@@ -4,9 +4,9 @@
   
   <div [ngSwitch]="event?.time">
     Time:{{event?.time}}<br/>
-    <span *ngSwitchCase="'8:00 am'">(Early) </span>
+    <span [class.green]="event?.time=='8:00 am'" *ngSwitchCase="'8:00 am'">(Early) </span>
     <span *ngSwitchCase="'9:00 am'">(Late)</span>
     <span *ngSwitchDefault>(Normal) </span>
   </div>
-  Price:{{event?.price}}<br/>
+    Price:{{event?.price}}<br/>
 </div>
