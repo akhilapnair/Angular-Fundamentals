@@ -1,6 +1,12 @@
 <div class="card mb-2 ">
   <h2>{{event?.name}}</h2>
   Date:{{event?.date}}<br/>
-  Time:{{event?.time}}<br/>
+  
+  <div [ngSwitch]="event?.time">
+    Time:{{event?.time}}<br/>
+    <span *ngSwitchCase="'8:00 am'">(Early) </span>
+    <span *ngSwitchCase="'9:00 am'">(Late)</span>
+    <span *ngSwitchDefault>(Normal) </span>
+  </div>
   Price:{{event?.price}}<br/>
 </div>
