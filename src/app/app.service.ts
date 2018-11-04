@@ -18,7 +18,5 @@ get_products(){
     this.EVENT =  this.httpClient.get(this.baseUrl + '/event').map(res=>{return res});
 return this.httpClient.get(this.baseUrl + '/event').map(res=>{return res});
 }
-getEventDeatils(id:any){
-return this.EVENT.find(event=>event.id == id)
-}
+
 }

@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { AppService } from './app.service';
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { routes } from './app.routing';
+import { ToastrService } from 'src/app/common/toastr.service';
 
 
 
@@ -28,7 +29,7 @@ import { routes } from './app.routing';
     HttpClientModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [AppService],
+  providers: [AppService,ToastrService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
