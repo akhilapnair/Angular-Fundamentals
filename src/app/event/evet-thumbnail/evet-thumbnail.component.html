@@ -1,4 +1,4 @@
-<div class="card mb-2" >
+<div class="card mb-2" [routerLink] = "['/event',event.id]">
   <h2>{{event?.name}}</h2>
   Date:{{event?.date}}<br/>
   <div [ngSwitch]="event?.time">

@@ -16,7 +16,6 @@ export class EvetThumbnailComponent implements OnInit {
     console.log('heree');
   }
   submit(){
-    console.log('clicked')
     this.buttonClick.emit();
   }
 }
