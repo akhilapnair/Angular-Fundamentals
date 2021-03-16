@@ -1,0 +1,232 @@
+$active-bg : #c9e0fb;
+
+.p-table {
+    &__table-style-class {
+
+        .p-paginator-bottom.p-paginator.p-component {
+            display: none;
+        }
+
+        // &.p-datatable {
+        .p-datatable-footer {
+            border: 0px solid #ffffff;
+        }
+
+        // }
+
+        .p-datatable-thead {
+            background: #ffffff;
+
+            // &--item {
+            //     @include display-flex('row');
+            //     @include browser-attr(justify-content, flex-start);
+            //     @include browser-attr(align-items, center);
+
+            //     &.check-list {
+            //         @include browser-attr(justify-content, center);
+            //     }
+
+            //     .sort-icon {
+            //         margin-left: rem(10);
+
+            //         >i.fa {
+            //             font-size: 16px;
+            //         }
+            //     }
+            // }
+
+            >tr {
+                // box-shadow: 0px 2px 3px 0px #b5b5b594;
+
+                >th {
+                    padding: rem(10) rem(8);
+                    @include browser-attr(background-color, #ffffff);
+                    border: 0px solid #ffffff;
+                    cursor: pointer;
+                    @include browser-attr(transition, all 0.2s ease);
+                    font-size  : $text-sizem2;
+                    line-height: $text-sizem4;
+                    font-weight: $font-bold;
+                    font-family: $font-family;
+                    color      : $midnight-black;
+
+                    &.p-sortable-column {
+
+                        &:hover,
+                        &:focus,
+                        &:focus-within,
+                        &.active {
+                            @include browser-attr(transition, all 0.2s ease);
+                            @include browser-attr(background-color, $smoke-gray);
+                            color     : $midnight-black;
+                            box-shadow: 0 0px 0 0 $cherry-red;
+
+                        }
+
+                        &.p-highlight {
+                            @include browser-attr(transition, all 0.2s ease);
+                            @include browser-attr(background-color, #add1fa);
+                            color: $midnight-black;
+
+                            &:hover,
+                            &:focus,
+                            &:focus-within,
+                            &.active {
+                                @include browser-attr(transition, all 0.2s ease);
+                                @include browser-attr(background-color, #add1fa);
+                                color     : $midnight-black;
+                                box-shadow: 0 0px 0 0 $cherry-red;
+
+                                .p-sortable-column-icon {
+                                    color: $midnight-black;
+                                }
+                            }
+                        }
+
+                        .p-sortable-column-icon {
+                            font-size  : 10px;
+                            color      : $midnight-black;
+                            margin-left: rem(2);
+
+                            &:hover {
+                                color: $midnight-black;
+                            }
+
+                            &.pi-sort-alt:before {
+                                content    : "\f0dc";
+                                font-family: FontAwesome;
+
+                            }
+
+                            &.pi-sort-amount-down:before {
+                                content    : "\f0dd";
+                                font-family: FontAwesome;
+
+                            }
+
+                            &.pi-sort-amount-up-alt:before {
+                                content    : "\f0de";
+                                font-family: FontAwesome;
+
+                            }
+                        }
+                    }
+
+                    &:first-child {
+                        border-left: 0;
+                    }
+
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+
+        .p-datatable-tbody {
+            &>tr {
+                border: 0px;
+                cursor: default;
+
+
+
+
+                >td {
+
+                    font-size    : $text-sizem2;
+                    line-height  : $text-sizem4;
+                    font-weight  : $font-normal;
+                    text-align   : left;
+                    border       : 1px solid #e0e0e0;
+                    border-bottom: 0px solid #e0e0e0;
+                    color        : $midnight-black;
+                    padding      : 5px 8px;
+
+                    .nonge-letter-head {
+                        color       : $ge-blue;
+                        margin-right: rem(10);
+                    }
+
+                    &:nth-child(n) {
+                        border-right : 0px;
+                        border-left  : 0px;
+                        border-top   : 1px solid #e0e0e0;
+                        border-bottom: 0px solid #e0e0e0;
+                    }
+
+                    &:nth-child(1) {
+                        border-radius: 0px;
+                        border-right : 0px;
+                        border-left  : 1px solid #e0e0e0;
+                    }
+
+                    &:last-child {
+                        border-left  : 0px;
+                        border-right : 1px solid #e0e0e0;
+                        border-radius: 0px;
+                    }
+                }
+
+                &:last-child {
+
+                    >td {
+                        &.no-rec-found {
+                            border: 1px solid #e0e0e0;
+                        }
+
+                        border-bottom: 1px solid #e0e0e0;
+
+                    }
+                }
+
+                &:hover {
+
+                    &:not(.row-active) {
+                        background-color: #e9fcff;
+                    }
+
+                    &.row-active {
+                        background-color: $active-bg;
+                    }
+                }
+
+                &.row-active {
+                    background-color: $active-bg;
+                }
+
+                &:nth-child(even) {
+                    background-color: #eeecec;
+
+                    &:hover {
+
+                        &:not(.row-active) {
+                            background-color: #e9fcff;
+                        }
+
+                        &.row-active {
+                            background-color: $active-bg;
+                        }
+                    }
+
+                    &.row-active {
+                        background-color: $active-bg;
+                    }
+                }
+            }
+        }
+    }
+
+    &__style-class {
+        .p-datatable-header {
+            padding   : 5px 0px;
+            background: transparent;
+            border    : 0px;
+        }
+        .p-datatable-footer {
+            border: 0px solid #ffffff;
+        }
+        .p-paginator-bottom.p-paginator.p-component {
+            display: none;
+        }
+    }
+}

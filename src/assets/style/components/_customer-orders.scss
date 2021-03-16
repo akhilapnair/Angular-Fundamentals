@@ -1,0 +1,149 @@
+.p-scroll{
+    &__o-fulfillment{
+        &--summary {
+            opacity   : 1;
+            transition: background-color .2s;
+        
+            // height      : calc(100vh - 150px);
+            &.p-scrollpanel.p-component {
+                max-width         : 100%;
+                height            : calc(100vh - 150px);
+                // height         : 100%;
+                // padding  : 0rem 0.6666666667rem 0rem 0rem;
+                padding           : rem(0) rem(0) rem(0) rem(0);
+        
+                .p-scrollpanel-wrapper {
+                    z-index: 0;
+                }
+        
+                .p-scrollpanel-bar.p-scrollpanel-bar-y {
+                    background: #cccccc;
+                    z-index   : 0;
+                    transition: background-color .2s;
+        
+                    &:hover {
+                        background-color: $ge-blue;
+                    }
+                }
+            }
+        
+        }
+        &--parts {
+            opacity   : 1;
+            transition: background-color .2s;
+        
+            // height      : calc(100vh - 150px);
+            &.p-scrollpanel.p-component {
+                max-width         : 100%;
+                height            : calc(100vh - 150px);
+                // height         : 100%;
+                // padding  : 0rem 0.6666666667rem 0rem 0rem;
+                padding           : rem(0) rem(0) rem(0) rem(0);
+        
+                .p-scrollpanel-wrapper {
+                    z-index: 0;
+                }
+        
+                .p-scrollpanel-bar.p-scrollpanel-bar-y {
+                    background: #cccccc;
+                    z-index   : 0;
+                    transition: background-color .2s;
+        
+                    &:hover {
+                        background-color: $ge-blue;
+                    }
+                }
+            }
+        
+        }
+    }
+    &__custorder-table {
+        opacity   : 1;
+        transition: background-color .2s;
+    
+        // height      : calc(100vh - 150px);
+        &.p-scrollpanel.p-component {
+            max-width         : 100%;
+            height            : calc(100vh - 150px);
+            // height         : 100%;
+            // padding  : 0rem 0.6666666667rem 0rem 0rem;
+            padding           : rem(0) rem(0) rem(0) rem(0);
+    
+            .p-scrollpanel-wrapper {
+                z-index: 0;
+            }
+    
+            .p-scrollpanel-bar.p-scrollpanel-bar-y {
+                background: #cccccc;
+                z-index   : 0;
+                transition: background-color .2s;
+    
+                &:hover {
+                    background-color: $ge-blue;
+                }
+            }
+        }
+    
+    }
+    &__custorder-side-panel {
+        opacity   : 1;
+        transition: background-color .2s;
+    
+        // height      : calc(100vh - 150px);
+        &.p-scrollpanel.p-component {
+            max-width         : 100%;
+            height            : calc(100vh - 150px);
+            // height         : 100%;
+            // padding  : 0rem 0.6666666667rem 0rem 0rem;
+            padding           : rem(0) rem(0) rem(0) rem(0);
+    
+            .p-scrollpanel-wrapper {
+                z-index: 0;
+            }
+    
+            .p-scrollpanel-bar.p-scrollpanel-bar-y {
+                background: #cccccc;
+                z-index   : 0;
+                transition: background-color .2s;
+    
+                &:hover {
+                    background-color: $ge-blue;
+                }
+            }
+        }
+    
+    }
+    &__inventory-side-panel {
+        opacity   : 1;
+        transition: background-color .2s;
+    
+        // height      : calc(100vh - 150px);
+        &.p-scrollpanel.p-component {
+            max-width         : 100%;
+            height            : calc(40vh );
+            // height         : 100%;
+            // padding  : 0rem 0.6666666667rem 0rem 0rem;
+            padding           : rem(0) rem(0) rem(0) rem(0);
+    
+            .p-scrollpanel-wrapper {
+                z-index: 0;
+            }
+    
+            .p-scrollpanel-bar.p-scrollpanel-bar-y {
+                background: #cccccc;
+                z-index   : 0;
+                transition: background-color .2s;
+    
+                &:hover {
+                    background-color: $ge-blue;
+                }
+            }
+        }
+    
+    }
+}
+@media (max-width: 40rem) {
+    .p-scroll_custorder-side-panel.p-scrollpanel.p-component {
+        height: 100%;
+    }
+}

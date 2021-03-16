@@ -1,0 +1,1600 @@
+$text-sizem1 :rem(11);
+$text-sizem2 :rem(12);
+$text-sizem3 :rem(13);
+$text-sizem4 :rem(14);
+$text-sizem5 :rem(15);
+$text-sizel1 :rem(16);
+$text-sizel2 :rem(17);
+$text-sizel3 :rem(18);
+$text-sizel4 :rem(19);
+$text-sizel5 :rem(20);
+
+.search-date__selectors--wrp {
+  .date-picker__append {
+    .search-date__panel {
+      &.p-datepicker.p-component {
+        left: 0px !important;
+        top : 28px !important;
+      }
+    }
+
+    .search-date-order__panel {
+      &.p-datepicker.p-component {
+        left: -75px !important;
+        top : 28px !important;
+      }
+    }
+  }
+}
+
+.inst-date__unique {
+  .search-date__panel {
+    &.p-datepicker.p-component {
+      left: 0px !important;
+      top : 28px !important;
+    }
+  }
+
+  .search-date-order__panel {
+    &.p-datepicker.p-component {
+      left: -75px !important;
+      top : 28px !important;
+    }
+  }
+
+  .search-date__panel {
+    &.p-datepicker.p-component {
+      max-width : rem(220);
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+    }
+
+    .p-datepicker-group-container {
+      // margin: 2px 8px;
+    }
+
+    .p-datepicker-header {
+      background: #ebebeb;
+      padding   : 2px 0px;
+
+      button.p-datepicker-next.p-link,
+      button.p-datepicker-prev.p-link {
+        background   : $cobalt-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+        height       : rem(20);
+        width        : rem(20);
+
+        &:hover {
+          background: $ge-blue;
+          color     : #ffffff;
+        }
+      }
+
+      .p-datepicker-title {
+        @include display-flex('row');
+        @include browser-attr(justify-content, space-between);
+        @include browser-attr(align-items, center);
+      }
+
+      select.p-datepicker-month,
+      select.p-datepicker-year {
+        border-radius: 5px;
+        font-size    : rem(14);
+      }
+    }
+
+    .p-datepicker-calendar-container {
+      margin: 2px 8px;
+
+      table.p-datepicker-calendar {
+        thead {
+          tr {
+            th {
+              padding: 0rem;
+              width  : rem(27);
+              margin : 0px;
+
+              >span {
+                font-family: $font-family;
+                margin     : 0px;
+                font-size  : rem(12);
+                width      : rem(27);
+                height     : rem(17);
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 0rem;
+              width  : rem(27);
+
+              >span {
+                width : rem(27);
+                height: rem(20);
+                color : $midnight-black;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .search-date-order__panel {
+    &.p-datepicker.p-component {
+      max-width : rem(220);
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+    }
+
+    .p-datepicker-group-container {
+      // margin: 2px 8px;
+    }
+
+    .p-datepicker-header {
+      background: #ebebeb;
+      padding   : 2px 0px;
+
+      button.p-datepicker-next.p-link,
+      button.p-datepicker-prev.p-link {
+        background   : $cobalt-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+        height       : rem(20);
+        width        : rem(20);
+
+        &:hover {
+          background: $ge-blue;
+          color     : #ffffff;
+        }
+      }
+
+      .p-datepicker-title {
+        @include display-flex('row');
+        @include browser-attr(justify-content, space-between);
+        @include browser-attr(align-items, center);
+      }
+
+      select.p-datepicker-month,
+      select.p-datepicker-year {
+        border-radius: 5px;
+        font-size    : rem(14);
+      }
+    }
+
+    .p-datepicker-calendar-container {
+      margin: 2px 8px;
+
+      table.p-datepicker-calendar {
+        thead {
+          tr {
+            th {
+              padding: 0rem;
+              width  : rem(27);
+              margin : 0px;
+
+              >span {
+                font-family: $font-family;
+                margin     : 0px;
+                font-size  : rem(12);
+                width      : rem(27);
+                height     : rem(17);
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 0rem;
+              width  : rem(27);
+
+              >span {
+                width : rem(27);
+                height: rem(20);
+                color : $midnight-black;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+.inst-date__grp {
+  .search-date__panel {
+    &.p-datepicker.p-component {
+      left: -95px !important;
+      top : 28px !important;
+    }
+  }
+
+  .search-date-order__panel {
+    &.p-datepicker.p-component {
+      left: -95px !important;
+      top : 28px !important;
+    }
+  }
+
+  .search-date__panel {
+    &.p-datepicker.p-component {
+      max-width : rem(220);
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+    }
+
+    .p-datepicker-group-container {
+      // margin: 2px 8px;
+    }
+
+    .p-datepicker-header {
+      background: #ebebeb;
+      padding   : 2px 0px;
+
+      button.p-datepicker-next.p-link,
+      button.p-datepicker-prev.p-link {
+        background   : $cobalt-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+        height       : rem(20);
+        width        : rem(20);
+
+        &:hover {
+          background: $ge-blue;
+          color     : #ffffff;
+        }
+      }
+
+      .p-datepicker-title {
+        @include display-flex('row');
+        @include browser-attr(justify-content, space-between);
+        @include browser-attr(align-items, center);
+      }
+
+      select.p-datepicker-month,
+      select.p-datepicker-year {
+        border-radius: 5px;
+        font-size    : rem(14);
+      }
+    }
+
+    .p-datepicker-calendar-container {
+      margin: 2px 8px;
+
+      table.p-datepicker-calendar {
+        thead {
+          tr {
+            th {
+              padding: 0rem;
+              width  : rem(27);
+              margin : 0px;
+
+              >span {
+                font-family: $font-family;
+                margin     : 0px;
+                font-size  : rem(12);
+                width      : rem(27);
+                height     : rem(17);
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 0rem;
+              width  : rem(27);
+
+              >span {
+                width : rem(27);
+                height: rem(20);
+                color : $midnight-black;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .search-date-order__panel {
+    &.p-datepicker.p-component {
+      max-width : rem(220);
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+    }
+
+    .p-datepicker-group-container {
+      // margin: 2px 8px;
+    }
+
+    .p-datepicker-header {
+      background: #ebebeb;
+      padding   : 2px 0px;
+
+      button.p-datepicker-next.p-link,
+      button.p-datepicker-prev.p-link {
+        background   : $cobalt-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+        height       : rem(20);
+        width        : rem(20);
+
+        &:hover {
+          background: $ge-blue;
+          color     : #ffffff;
+        }
+      }
+
+      .p-datepicker-title {
+        @include display-flex('row');
+        @include browser-attr(justify-content, space-between);
+        @include browser-attr(align-items, center);
+      }
+
+      select.p-datepicker-month,
+      select.p-datepicker-year {
+        border-radius: 5px;
+        font-size    : rem(14);
+      }
+    }
+
+    .p-datepicker-calendar-container {
+      margin: 2px 8px;
+
+      table.p-datepicker-calendar {
+        thead {
+          tr {
+            th {
+              padding: 0rem;
+              width  : rem(27);
+              margin : 0px;
+
+              >span {
+                font-family: $font-family;
+                margin     : 0px;
+                font-size  : rem(12);
+                width      : rem(27);
+                height     : rem(17);
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 0rem;
+              width  : rem(27);
+
+              >span {
+                width : rem(27);
+                height: rem(20);
+                color : $midnight-black;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+.date-picker__append {
+  .search-date__panel {
+    &.p-datepicker.p-component {
+      max-width : rem(220);
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+    }
+
+    .p-datepicker-group-container {
+      // margin: 2px 8px;
+    }
+
+    .p-datepicker-header {
+      background: #ebebeb;
+      padding   : 2px 0px;
+
+      button.p-datepicker-next.p-link,
+      button.p-datepicker-prev.p-link {
+        background   : $cobalt-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+        height       : rem(20);
+        width        : rem(20);
+
+        &:hover {
+          background: $ge-blue;
+          color     : #ffffff;
+        }
+      }
+
+      .p-datepicker-title {
+        @include display-flex('row');
+        @include browser-attr(justify-content, space-between);
+        @include browser-attr(align-items, center);
+      }
+
+      select.p-datepicker-month,
+      select.p-datepicker-year {
+        border-radius: 5px;
+        font-size    : rem(14);
+      }
+    }
+
+    .p-datepicker-calendar-container {
+      margin: 2px 8px;
+
+      table.p-datepicker-calendar {
+        thead {
+          tr {
+            th {
+              padding: 0rem;
+              width  : rem(27);
+              margin : 0px;
+
+              >span {
+                font-family: $font-family;
+                margin     : 0px;
+                font-size  : rem(12);
+                width      : rem(27);
+                height     : rem(17);
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 0rem;
+              width  : rem(27);
+
+              >span {
+                width : rem(27);
+                height: rem(20);
+                color : $midnight-black;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .search-date-order__panel {
+    &.p-datepicker.p-component {
+      max-width : rem(220);
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+    }
+
+    .p-datepicker-group-container {
+      // margin: 2px 8px;
+    }
+
+    .p-datepicker-header {
+      background: #ebebeb;
+      padding   : 2px 0px;
+
+      button.p-datepicker-next.p-link,
+      button.p-datepicker-prev.p-link {
+        background   : $cobalt-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+        height       : rem(20);
+        width        : rem(20);
+
+        &:hover {
+          background: $ge-blue;
+          color     : #ffffff;
+        }
+      }
+
+      .p-datepicker-title {
+        @include display-flex('row');
+        @include browser-attr(justify-content, space-between);
+        @include browser-attr(align-items, center);
+      }
+
+      select.p-datepicker-month,
+      select.p-datepicker-year {
+        border-radius: 5px;
+        font-size    : rem(14);
+      }
+    }
+
+    .p-datepicker-calendar-container {
+      margin: 2px 8px;
+
+      table.p-datepicker-calendar {
+        thead {
+          tr {
+            th {
+              padding: 0rem;
+              width  : rem(27);
+              margin : 0px;
+
+              >span {
+                font-family: $font-family;
+                margin     : 0px;
+                font-size  : rem(12);
+                width      : rem(27);
+                height     : rem(17);
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              padding: 0rem;
+              width  : rem(27);
+
+              >span {
+                width : rem(27);
+                height: rem(20);
+                color : $midnight-black;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+}
+
+.search-date {
+  &__panel {
+    &.p-datepicker.p-component {
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+      .p-datepicker-calendar-container {
+        margin: 2px 8px;
+      }
+
+      table.p-datepicker-calendar {
+        thead {
+          tr {
+            th {
+              >span {
+                font-family: $font-family;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              >span {
+                color: $midnight-black;
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      button.p-datepicker-next,
+      button.p-datepicker-prev {
+        background   : #fff;
+        background   : $ge-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+
+        &:hover {
+          background: #ffffff;
+          color     : $ge-blue;
+        }
+      }
+    }
+  }
+
+  &__style-class {
+    &.p-calendar {
+      input.search-date__input {
+
+        border-radius   : 5px 0px 0px 5px;
+        border          : 2px solid;
+        border-right    : 0px;
+        width           : 100%;
+        min-width       : rem(90);
+        border-color    : $smoke-gray;
+        margin          : 0px;
+        height          : rem(30);
+        padding         : rem(2) rem(10) rem(2) rem(10);
+        background-color: $text-white;
+        color           : $midnight-black;
+        font-size       : $text-sizem4;
+        font-weight     : $font-bold;
+        line-height     : $text-sizel1;
+        color           : $midnight-black;
+        font-family     : $font-family;
+
+        &:focus {
+          outline   : 0;
+          box-shadow: 0 0 0 0rem #8dcdff;
+        }
+      }
+
+    }
+
+    button.p-datepicker-trigger.p-button.p-component {
+      padding      : 2px 10px;
+      background   : #fff;
+      border       : 2px solid $smoke-gray;
+      border-radius: 0px 5px 5px 0px;
+      border-left  : 0px;
+      color        : $fossil-gray;
+
+      &:focus {
+        outline   : 0;
+        box-shadow: 0 0 0 0rem #8dcdff;
+      }
+    }
+  }
+}
+
+.search-date-order {
+  &__panel {
+    &.p-datepicker.p-component {
+      background: $smoke-gray;
+      margin    : 2px 0px;
+      padding   : 0px;
+
+      .p-datepicker-calendar-container {
+        padding: 6px 6px 20px 6px;
+        margin : 0px 0px;
+      }
+
+      table.p-datepicker-calendar {
+        margin : 0px 0px;
+        thead {
+          tr {
+            th {
+              >span {
+                font-family: $font-family;
+                @include display-flex('row');
+                @include browser-attr(justify-content, center);
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              >span {
+                color: $midnight-black;
+
+                &.p-highlight {
+                  color     : #ffffff;
+                  background: $ge-blue;
+                }
+
+                &:hover:not(.p-disabled) {
+                  color     : $midnight-black;
+                  background: #c9e0fb;
+                }
+
+                &.p-disabled {
+                  color     : $fossil-gray;
+                  background: $smoke-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      button.p-datepicker-next,
+      button.p-datepicker-prev {
+        background   : #fff;
+        background   : $ge-blue;
+        color        : #ffffff;
+        border-radius: 5px;
+        padding      : 2px 3px;
+        margin       : 2px 5px;
+
+        &:hover {
+          background: #ffffff;
+          color     : $ge-blue;
+        }
+      }
+    }
+  }
+
+  &__style-class {
+    &.p-calendar {
+      input.search-date-order__input {
+
+        border-radius   : 5px 0px 0px 5px;
+        border          : 2px solid;
+        border-right    : 0px;
+        width           : 100%;
+        min-width       : rem(90);
+        border-color    : $smoke-gray;
+        margin          : 0px;
+        height          : rem(30);
+        padding         : rem(2) rem(10) rem(2) rem(10);
+        background-color: $text-white;
+        color           : $midnight-black;
+        font-size       : $text-sizem2;
+        font-weight     : $font-bold;
+        line-height     : $text-sizem4;
+        color           : $midnight-black;
+        font-family     : $font-family;
+
+        &:focus {
+          outline   : 0;
+          box-shadow: 0 0 0 0rem #8dcdff;
+        }
+      }
+
+    }
+
+    button.p-datepicker-trigger.p-button.p-component {
+      padding      : 2px 10px;
+      background   : #fff;
+      border       : 2px solid $smoke-gray;
+      border-radius: 0px 5px 5px 0px;
+      border-left  : 0px;
+      color        : $fossil-gray;
+
+      &:focus {
+        outline   : 0;
+        box-shadow: 0 0 0 0rem #8dcdff;
+      }
+    }
+  }
+}
+
+.p-scroll {
+  &__search-list {
+    .p-scrollpanel-bar {
+      background-color: #cccccc;
+      opacity         : 1;
+      transition      : background-color .2s;
+
+      &:hover {
+        background-color: $ge-blue;
+      }
+    }
+  }
+
+  &__vieworder {
+    &--table {
+      opacity   : 1;
+      transition: background-color .2s;
+
+      // height      : calc(100vh - 150px);
+      &.p-scrollpanel.p-component {
+        max-width         : 100%;
+        // height         : 100%;
+        height            : calc(100vh - 150px);
+        // padding  : 0rem 0.6666666667rem 0rem 0rem;
+        padding           : rem(0) rem(10) rem(0) rem(0);
+
+        .p-scrollpanel-wrapper {
+          z-index: 0;
+        }
+
+        .p-scrollpanel-bar.p-scrollpanel-bar-x {
+          // visibility: hidden;
+        }
+
+        .p-scrollpanel-bar.p-scrollpanel-bar-y {
+          background: #cccccc;
+          z-index   : 0;
+          transition: background-color .2s;
+
+          &:hover {
+            background-color: $ge-blue;
+          }
+        }
+      }
+
+
+      &:hover {
+        // background-color: $ge-blue;
+      }
+    }
+
+    &--side-panel {
+      opacity   : 1;
+      transition: background-color .2s;
+
+      // height      : calc(100vh - 150px);
+      &.p-scrollpanel.p-component {
+        max-width         : 100%;
+        height            : calc(100vh - 150px);
+        // height         : 100%;
+        // padding  : 0rem 0.6666666667rem 0rem 0rem;
+        padding           : rem(0) rem(0) rem(0) rem(0);
+
+        .p-scrollpanel-wrapper {
+          z-index: 0;
+        }
+
+        .p-scrollpanel-bar.p-scrollpanel-bar-x {
+          // visibility: hidden;
+        }
+
+        .p-scrollpanel-bar.p-scrollpanel-bar-y {
+          background: #cccccc;
+          z-index   : 0;
+          transition: background-color .2s;
+
+          &:hover {
+            background-color: $ge-blue;
+          }
+        }
+      }
+
+
+      &:hover {
+        // background-color: $ge-blue;
+      }
+    }
+  }
+}
+
+p-autocomplete {
+  &:not(.ui-inputwrapper-filled) {
+
+    .m-order,
+    .n-cust {
+      &__p-auto {
+        &.ui-autocomplete {
+          &.ui-widget {
+            input {
+              font-weight: 400;
+              color      : $fossil-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 
+
+.n-cust {
+  &__p-auto {
+    &.ui-autocomplete {
+      &.ui-widget {
+        width : rem(320);
+        height: rem(30);
+
+        input {
+          width           : rem(320);
+          border          : 2px solid;
+          border-radius   : 2px;
+          border-color    : $smoke-gray;
+          margin          : 0px;
+          height          : rem(30);
+          padding         : rem(0) rem(30) rem(0) rem(10);
+          background-color: $text-white;
+          color           : $midnight-black;
+          font-size       : rem(14);
+          font-weight     : $font-bold;
+          line-height     : rem(16);
+          color           : $midnight-black;
+          font-family     : $font-family;
+
+          &::-ms-clear,
+          &::-ms-reveal {
+            display: none;
+          }
+
+          &:focus,
+          &:active {
+            border-bottom: 1px solid $sky-blue;
+            box-shadow   : 0 1px 0 0 $sky-blue;
+          }
+
+          &.error {
+            box-shadow: 0 1px 0 0 $cherry-red;
+          }
+        }
+
+        ul.ui-autocomplete-items.ui-autocomplete-list {
+          @include browser-attr(background-color, $fog-gray);
+
+          >.ui-autocomplete-list-item.ui-state-highlight {
+            @include browser-attr(background-color, $ge-blue);
+
+            .cust {
+              &__name {
+                color      : $text-white;
+                font-size  : rem(14);
+                font-weight: $font-bold;
+                line-height: rem(16);
+                font-family: $font-family;
+              }
+
+              &__status {
+                color      : $midnight-black;
+                font-size  : rem(14);
+                font-weight: $font-bold;
+                line-height: rem(16);
+                font-family: $font-family;
+
+                &.validated {
+                  color: #c8ffc4;
+                }
+
+                &.non-validated {
+                  color: #ffd9e0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cust-form__field--input-box {
+  p-inputmask.ng-dirty.ng-invalid>.p-inputtext {
+    border-color       : $smoke-gray;
+    border-bottom-color: $cherry-red;
+
+    &:focus,
+    &:active {
+      border-bottom: 1px solid $sky-blue;
+      box-shadow   : 0 1px 0 0 $sky-blue;
+    }
+  }
+}
+
+p-autocomplete {
+  &.ng-invalid.ng-dirty.ng-touched {
+    >.n-cust__p-auto.p-autocomplete.p-component {
+      >input.p-inputtext {
+        border-color       : $smoke-gray;
+        border-bottom-color: $cherry-red;
+      }
+    }
+  }
+}
+
+.n-cust {
+  &__p-auto {
+    // &.ng-invalid.ng-dirty.ng-touched {
+    //   >.p-autocomplete {
+    //     >input.p-inputtext {
+    //       border-color       : $smoke-gray;
+    //       border-bottom-color: $cherry-red;
+    //     }
+    //   }
+    // }
+
+    &.p-autocomplete {
+      &.p-component {
+        @include display-flex('column');
+        width: 100%;
+      }
+
+      input {
+        // width           : rem(320);
+        border          : 2px solid;
+        border-radius   : 2px;
+        border-color    : $smoke-gray;
+        margin          : 0px;
+        height          : rem(30);
+        padding         : rem(0) rem(10) rem(0) rem(10);
+        background-color: $text-white;
+        color           : $midnight-black;
+        font-size       : rem(14);
+        font-weight     : $font-bold;
+        line-height     : rem(16);
+        color           : $midnight-black;
+        font-family     : $font-family;
+
+        &::-ms-clear,
+        &::-ms-reveal {
+          display: none;
+        }
+
+        &:hover {
+          &:not(:focus) {
+            border-color: $fossil-gray;
+          }
+        }
+
+
+        // .ng-dirty.ng-invalid p-autocomplete-input p-inputtext
+        &::placeholder {
+          color      : $fossil-gray;
+          font-weight: 400;
+          opacity    : 1;
+        }
+
+        &:focus,
+        &:active {
+          border-bottom: 1px solid $sky-blue;
+          box-shadow   : 0 1px 0 0 $sky-blue;
+        }
+
+        &.error {
+          box-shadow: 0 1px 0 0 $cherry-red;
+        }
+      }
+
+      .n-cust__p-auto-panel {
+        &.p-autocomplete-panel {
+          @include browser-attr(background-color, $fog-gray);
+          padding     : 2px 5px;
+          // left     : 0px !important;
+          max-width   : 100%;
+        }
+
+        &.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item.p-highlight {
+          color        : #ffffff;
+          background   : #b1d9ff;
+          border-radius: 3px;
+        }
+
+        .p-autocomplete-item {
+          padding: 3px 6px;
+
+          &:hover {
+            @include browser-attr(background-color, #c9e0fb);
+          }
+        }
+      }
+    }
+  }
+
+
+
+  &__p-input-mask {
+
+    &.p-inputmask.p-component {
+      width           : rem(320);
+      border          : 2px solid;
+      border-radius   : 2px;
+      border-color    : $smoke-gray;
+      margin          : 0px;
+      height          : rem(30);
+      padding         : rem(0) rem(30) rem(0) rem(10);
+      background-color: $text-white;
+      color           : $midnight-black;
+      font-size       : $text-sizem4;
+      font-weight     : $font-bold;
+      line-height     : $text-sizel1;
+      color           : $midnight-black;
+      font-family     : $font-family;
+
+      &::-ms-clear,
+      &::-ms-reveal {
+        display: none;
+      }
+
+      &:disabled {
+        color: #999999;
+      }
+
+      &:focus,
+      &:active {
+        border-bottom: 1px solid $sky-blue;
+        box-shadow   : 0 1px 0 0 $sky-blue;
+      }
+
+      &.error {
+        border-bottom: 1px solid $cherry-red;
+        box-shadow   : 0 1px 0 0 $cherry-red;
+      }
+
+      &.ng-invalid.ng-dirty.ng-touched {
+        &:not(:focus) {
+          border-bottom: 1px solid $cherry-red;
+          box-shadow   : 0 1px 0 0 $cherry-red;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+p-inputmask {
+  &.p-inputwrapper-filled.ng-dirty.ng-invalid.ng-touched {
+    &:not(:focus) {
+      border-bottom: 1px solid $cherry-red;
+      box-shadow   : 0 1px 0 0 $cherry-red;
+    }
+  }
+}
+
+.search-bar {
+  &__auto-complt {
+    p-autoComplete {
+      @include display-flex('row');
+      @include browser-attr(flex-grow, 1);
+      @include browser-attr(align-self, center);
+      @include browser-attr(justify-content, flex-start);
+    }
+  }
+}
+
+.cust-form__field {
+  &--drop-box {
+    p-dropdown {
+      @include display-flex('row');
+      @include browser-attr(flex-grow, 1);
+      @include browser-attr(align-self, center);
+      @include browser-attr(justify-content, flex-start);
+
+      span.p-dropdown-label.p-inputtext {
+        font-size  : 14px;
+        font-weight: 500;
+        padding    : 0px;
+      }
+    }
+  }
+
+  &--auto-complt {
+    p-autoComplete {
+      @include display-flex('row');
+      @include browser-attr(flex-grow, 1);
+      @include browser-attr(align-self, center);
+      @include browser-attr(justify-content, flex-start);
+
+      &.ng-dirty.ng-touched.ng-invalid.p-inputwrapper-filled {
+        .p-autocomplete-loader {
+          visibility: hidden;
+        }
+      }
+    }
+
+    .p-input-icon-left {
+      p-autoComplete {
+        input {
+          padding: 0px 10px 0px 20px;
+        }
+      }
+
+    }
+  }
+}
+
+.cust-form__field .select-field {
+  &__p-select {
+    &.ui-dropdown {
+      &.ui-widget {
+        display      : flex;
+        flex-grow    : 1;
+        margin       : 0;
+        border       : 2px solid;
+        border-radius: 2px;
+        height       : rem(30);
+        border-color : $smoke-gray;
+        font-size    : rem(14);
+        font-weight  : 500;
+        line-height  : rem(16);
+        color        : $midnight-black;
+        font-family  : $font-family;
+
+        label.ui-inputtext {
+          @include display-flex('row');
+          @include browser-attr(align-items, center);
+          padding    : rem(0) rem(30) rem(0) rem(10);
+          font-size  : rem(14);
+          font-weight: 500;
+          line-height: rem(16);
+          color      : $midnight-black;
+          font-family: $font-family;
+
+          &.ui-placeholder {
+            color      : $fossil-gray;
+            font-weight: 400;
+          }
+        }
+
+        .ui-dropdown-trigger {
+          @include display-flex('row');
+          @include browser-attr(align-items, flex-end);
+          padding: rem(6) rem(4);
+
+          span.ui-clickable.fa {
+            margin: 0;
+          }
+        }
+      }
+
+      &:not(.ui-state-disabled).ui-state-focus {
+        border-bottom: 1px solid $sky-blue;
+        box-shadow   : 0 1px 0 0 $sky-blue;
+      }
+
+
+    }
+  }
+}
+
+.search-categories {
+  >p-dropdown {
+    width: 100%;
+  }
+}
+
+
+
+.select-field {
+  &__p-select {
+    .p-dropdown-label.p-inputtext.p-placeholder {
+      color      : $fossil-gray;
+      font-weight: 400;
+    }
+
+    span.p-dropdown-trigger-icon.pi.pi-chevron-down {
+      color      : $fossil-gray;
+      font-weight: 600;
+      font-size  : rem(12);
+    }
+
+    &.p-dropdown {
+      &.p-component {
+        display: flex;
+        width  : 100%;
+        @include browser-attr(background-color, #ffffff);
+        align-items  : center;
+        margin       : 0;
+        border       : 2px solid;
+        border-radius: 2px;
+        height       : rem(30);
+        border-color : $smoke-gray;
+        font-size    : rem(13);
+        font-weight  : 400;
+        line-height  : rem(15);
+        color        : $fossil-gray;
+        padding      : rem(0) rem(10) rem(0) rem(10);
+        font-family  : $font-family;
+
+        .p-inputtext {
+          color      : $midnight-black;
+          font-weight: 400;
+          font-family: $font-family;
+          font-size  : rem(13);
+          line-height: rem(15);
+        }
+
+        &:not(.p-disabled).p-focus {
+          border-bottom: 1px solid $sky-blue;
+          box-shadow   : 0 1px 0 0 $sky-blue;
+        }
+      }
+    }
+  }
+
+  &__p-select-panel {
+    &.p-dropdown-panel.p-component {
+      @include browser-attr(background-color, $fog-gray);
+      // width: 320px;
+    }
+
+
+
+    li.p-dropdown-item {
+      padding           : 2px 8px 2px 10px;
+      margin            : 0px 2px;
+      font-size         : rem(13);
+      font-weight       : 500;
+      line-height       : rem(15);
+      color             : $midnight-black;
+      font-family       : $font-family;
+      -webkit-transition: border-color 0.1s ease, color 0.1s ease;
+      -moz-transition   : border-color 0.1s ease, color 0.1s ease;
+      -ms-transition    : border-color 0.1s ease, color 0.1s ease;
+      transition        : border-color 0.1s ease, color 0.1s ease;
+
+      &:hover {
+        @include browser-attr(background-color, #c9e0fb);
+        -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+        -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+        -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+        transition        : background-color 0.2s ease, color 0.2s ease;
+      }
+
+      &.p-highlight {
+        @include browser-attr(background-color, $ge-blue);
+        -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+        -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+        -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+        transition        : background-color 0.2s ease, color 0.2s ease;
+        color             : #ffffff;
+      }
+    }
+  }
+}
+
+.select-field-row {
+  &__p-select {
+    .p-dropdown .p-dropdown-trigger {
+      width: auto;
+    }
+
+    .p-dropdown-label.p-inputtext.p-placeholder {
+      color      : $fossil-gray;
+      font-weight: 400;
+    }
+
+    span.p-dropdown-trigger-icon.pi.pi-chevron-down {
+      color      : $fossil-gray;
+      font-weight: 500;
+      font-size  : rem(12);
+    }
+
+    &.p-dropdown {
+      &.p-component {
+        display: flex;
+        width  : 100%;
+        @include browser-attr(background-color, #ffffff);
+        align-items  : center;
+        margin       : 0;
+        border       : 2px solid;
+        border-radius: 2px;
+        height       : rem(25);
+        border       : 1px solid;
+        border-color : $smoke-gray;
+        font-size    : rem(13);
+        font-weight  : 400;
+        line-height  : rem(15);
+        color        : $fossil-gray;
+        padding      : rem(0) rem(10) rem(0) rem(10);
+        font-family  : $font-family;
+
+        .p-inputtext {
+          color      : $midnight-black;
+          font-weight: 400;
+          font-family: $font-family;
+          font-size  : rem(13);
+          line-height: rem(15);
+          padding    : 2px 2px;
+        }
+
+        &:not(.p-disabled).p-focus {
+          border-bottom: 1px solid $sky-blue;
+          box-shadow   : 0 1px 0 0 $sky-blue;
+        }
+      }
+    }
+  }
+
+  &__p-select-panel {
+    &.p-dropdown-panel.p-component {
+      @include browser-attr(background-color, $fog-gray);
+      // width: 320px;
+    }
+
+    .p-dropdown-items-wrapper {
+      padding-bottom: 10px;
+    }
+
+    li.p-dropdown-item {
+      padding           : 2px 8px 2px 10px;
+      margin            : 0px 2px;
+      font-size         : rem(13);
+      font-weight       : 500;
+      line-height       : rem(15);
+      color             : $midnight-black;
+      font-family       : $font-family;
+      -webkit-transition: border-color 0.1s ease, color 0.1s ease;
+      -moz-transition   : border-color 0.1s ease, color 0.1s ease;
+      -ms-transition    : border-color 0.1s ease, color 0.1s ease;
+      transition        : border-color 0.1s ease, color 0.1s ease;
+
+      &:hover {
+        @include browser-attr(background-color, #c9e0fb);
+        -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+        -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+        -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+        transition        : background-color 0.2s ease, color 0.2s ease;
+      }
+
+      &.p-highlight {
+        @include browser-attr(background-color, $ge-blue);
+        -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+        -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+        -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+        transition        : background-color 0.2s ease, color 0.2s ease;
+        color             : #ffffff;
+      }
+    }
+  }
+}
+
+@media (max-width: 40rem) {
+
+  .p-scroll__vieworder--table.p-scrollpanel.p-component,
+  .p-scroll__vieworder--side-panel.p-scrollpanel.p-component {
+    height: 100%;
+  }
+
+}

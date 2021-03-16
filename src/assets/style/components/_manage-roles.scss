@@ -1,0 +1,195 @@
+p-autocomplete#search-Dealers {
+  width: 100%;
+}
+
+.cust-form__field--mgu-drop-box {
+  position: relative;
+  @include display-flex('row');
+
+  select {
+    min-width       : rem(245);
+    border          : 2px solid;
+    border-radius   : 2px;
+    border-color    : $smoke-gray;
+    height          : rem(30);
+    padding         : rem(0) rem(30) rem(0) rem(10);
+    background-color: $text-white;
+    color           : $midnight-black;
+    font-size       : $text-sizem3;
+    font-weight     : $font-normal;
+    line-height     : $text-sizem5;
+    color           : $midnight-black;
+    font-family     : $font-family;
+  }
+
+  [class^="ptrn__"] {
+    position: absolute;
+
+    font-size  : rem(13);
+    line-height: rem(13);
+    @include display-flex('row');
+    align-self : center;
+    font-style : normal;
+    font-weight: 500;
+    color      : #b3b3b3;
+    right      : 23px;
+  }
+}
+
+.cust-form__field--search-box {
+  .ngui-auto-complete-wrapper {
+    // height: rem(35);
+
+    input {
+      width           : rem(245) !important;
+      border          : 2px solid $smoke-gray !important;
+      border-radius   : 2px !important;
+      margin          : 0px;
+      height          : rem(30) !important;
+      padding         : rem(0) rem(30) rem(0) rem(10) !important;
+      background-color: $text-white;
+      color           : $midnight-black !important;
+      font-size       : $text-sizem3 !important;
+      font-weight     : $font-normal !important;
+      line-height     : $text-sizem5 !important;
+      color           : $midnight-black;
+      font-family     : $font-family;
+
+      &::-ms-clear,
+      &::-ms-reveal {
+        display: none;
+      }
+
+      &:disabled {
+        color: #999999;
+      }
+
+      &:focus,
+      &:active {
+        border-bottom: 1px solid $sky-blue !important;
+        box-shadow   : 0 1px 0 0 $sky-blue !important;
+      }
+
+      &.error {
+        border-bottom: 1px solid $cherry-red !important;
+        box-shadow   : 0 1px 0 0 $cherry-red !important;
+      }
+    }
+  }
+}
+
+.p-tk-a-complete {
+  &__in-stl-cls {
+
+
+    &.p-autocomplete-input.p-disabled {
+      background-color: #fafafa;
+      border-color    : #ebebeb;
+      opacity         : 1;
+    }
+
+    &.p-autocomplete-input {
+      border          : 2px solid #ebebeb;
+      border-radius   : 2px;
+      padding         : 2px 10px 2px 25px;
+      font-size       : 13px;
+      width           : 100%;
+      background-color: $text-white;
+      color           : $midnight-black;
+      font-size       : rem(13);
+      font-weight     : 400;
+      line-height     : rem(15);
+      color           : $midnight-black;
+      font-family     : $font-family;
+      height          : rem(30);
+
+      &::placeholder {
+        color      : $fossil-gray;
+        font-weight: 400;
+        opacity    : 1;
+        font-size  : rem(13);
+        font-family: $font-family;
+
+      }
+
+      &:hover {
+        &:not(:focus) {
+          border-color: $fossil-gray;
+          transition  : border-color .2s;
+        }
+      }
+
+      &:focus,
+      &:active {
+        border       : 2px solid #ebebeb;
+        border-bottom: 2px solid $sky-blue;
+        box-shadow   : 0 0px 0 0 $sky-blue;
+      }
+    }
+  }
+
+  &__stl-cls {
+    margin: 0px;
+    width : 100%;
+
+    .p-autocomplete-panel {
+
+      .p-autocomplete-items {
+        >:last-child {
+
+          // &li {
+          &.p-autocomplete-emptymessage.p-autocomplete-item {
+            // opacity: 0;
+            // visibility: hidden;
+            display: none;
+
+          }
+
+          // }
+
+          // &:not(:first-child){
+
+          // }
+        }
+
+        >:first-child {
+
+          // &li {
+          &.p-autocomplete-emptymessage.p-autocomplete-item {
+            // opacity: 1;
+            // visibility: visible;
+            display: block;
+          }
+
+          // }
+        }
+
+
+
+      }
+    }
+  }
+}
+
+.p-scroll {
+  &__p-s-tk {
+    .p-scrollpanel-wrapper {
+      margin-left: 0px;
+    }
+
+    .p-scrollpanel-content {
+      padding: 1px 0px 1px 0px;
+      height : calc(100% + 2px);
+    }
+
+    .p-scrollpanel-bar.p-scrollpanel-bar-y {
+      background: #cccccc;
+      z-index   : 1;
+      transition: background-color .2s;
+
+      &:hover {
+        background-color: $ge-blue;
+      }
+    }
+  }
+}

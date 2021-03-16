@@ -1,0 +1,84 @@
+.msg-dialog {
+    &__stl-cls {
+        font-size  : $text-sizem3;
+        line-height: $text-sizem5;
+        font-family: $font-family;
+
+        .p-dialog-header {
+            @include browser-attr(background-color, #00adee);
+            color: #fff;
+
+            .p-dialog-header-icons {
+                button.p-dialog-header-icon.p-dialog-header-close {
+                    font-size: 13px;
+
+                    .p-dialog-header-close-icon.pi.pi-times {
+                        &::before {
+                            @include browser-attr(transition, all 0.3s ease);
+                            color       : #fff;
+                            font-size   : 15px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+
+
+
+        .action-btns {
+            @include display-flex('row');
+            margin: rem(0) rem(-10) rem(0) rem(-10);
+
+            >:nth-child(n) {
+                margin     : rem(5) rem(10);
+                font-size  : $text-sizem3;
+                font-weight: $font-normal;
+                line-height: $text-sizem5;
+                font-family: $font-family;
+            }
+
+        }
+    }
+
+    &__mask-stl-cls {
+        &.p-dialog-mask {
+            @include browser-attr(background-color, #005fb814);
+        }
+    }
+
+    &__content-stl-cls {
+
+        font-size  : $text-sizem3;
+        line-height: $text-sizem5;
+        font-family: $font-family;
+
+        .img-exclamation {
+            &--wrp {
+                @include display-flex('row');
+                @include browser-attr(align-items, center);
+                @include browser-attr(justify-content, center);
+            }
+
+            border-radius   : 50%;
+            background-color: #FFCC00;
+            width           : 35px;
+            height          : 35px;
+            @include display-flex('row');
+            @include browser-attr(align-items, center);
+            @include browser-attr(justify-content, center);
+            margin-bottom: rem(10);
+
+            >i.fa-exclamation-triangle {
+                &::before {
+                    font-size  : 20px;
+                    color      : #ffffff;
+                    font-weight: 400;
+                    text-shadow: 1px 2px 3px #afafaf;
+                }
+            }
+        }
+    }
+
+}

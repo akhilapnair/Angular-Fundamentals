@@ -1,0 +1,476 @@
+.rep-search-date__selectors--wrp {
+    .rep-date-picker__label {
+        font-size: rem(13);
+    }
+
+    .rep-date-picker__append {
+        .rep-search-date__panel {
+            &.p-datepicker.p-component {
+                // left: 0px !important;
+                // top : 28px !important;
+            }
+        }
+
+        .rep-search-date-order__panela {
+            &.p-datepicker.p-component {
+                left: 40px !important;
+                top : 121px !important;
+            }
+        }
+
+        .rep-search-date-order__panelb {
+            &.p-datepicker.p-component {
+                left: 40px !important;
+                top : 173px !important;
+            }
+        }
+    }
+}
+
+.rep-date-picker__append {
+
+    .rep-search-date__panela,
+    .rep-search-date__panelb {
+        &.p-datepicker.p-component {
+            max-width : rem(220);
+            background: $smoke-gray;
+            margin    : 2px 0px;
+            padding   : 0px;
+
+        }
+
+        .p-datepicker-group-container {
+            // margin: 2px 8px;
+        }
+
+        .p-datepicker-header {
+            background: #ebebeb;
+            padding   : 2px 0px;
+
+            button.p-datepicker-next.p-link,
+            button.p-datepicker-prev.p-link {
+                background   : $cobalt-blue;
+                color        : #ffffff;
+                border-radius: 5px;
+                padding      : 2px 3px;
+                margin       : 2px 5px;
+                height       : rem(20);
+                width        : rem(20);
+
+                &:hover {
+                    background: $ge-blue;
+                    color     : #ffffff;
+                }
+            }
+
+            .p-datepicker-title {
+                @include display-flex('row');
+                @include browser-attr(justify-content, space-between);
+                @include browser-attr(align-items, center);
+            }
+
+            select.p-datepicker-month,
+            select.p-datepicker-year {
+                border-radius: 5px;
+                font-size    : rem(14);
+            }
+        }
+
+        .p-datepicker-calendar-container {
+            margin: 2px 8px;
+
+            table.p-datepicker-calendar {
+                thead {
+                    tr {
+                        th {
+                            padding: 0rem;
+                            width  : rem(27);
+                            margin : 0px;
+
+                            >span {
+                                font-family: $font-family;
+                                margin     : 0px;
+                                font-size  : rem(12);
+                                width      : rem(27);
+                                height     : rem(17);
+                                @include display-flex('row');
+                                @include browser-attr(justify-content, center);
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 0rem;
+                            width  : rem(27);
+
+                            >span {
+                                width : rem(27);
+                                height: rem(20);
+                                color : $midnight-black;
+                                @include display-flex('row');
+                                @include browser-attr(justify-content, center);
+
+                                &.p-highlight {
+                                    color     : #ffffff;
+                                    background: $ge-blue;
+                                }
+
+                                &:hover:not(.p-disabled) {
+                                    color     : $midnight-black;
+                                    background: #c9e0fb;
+                                }
+
+                                &.p-disabled {
+                                    color     : $fossil-gray;
+                                    background: $smoke-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .rep-search-date-order__panelb,
+    .rep-search-date-order__panela {
+        &.p-datepicker.p-component {
+            max-width : rem(220);
+            background: $smoke-gray;
+            margin    : 2px 0px;
+            padding   : 0px;
+
+        }
+
+        .p-datepicker-group-container {
+            // margin: 2px 8px;
+        }
+
+        .p-datepicker-header {
+            background: #ebebeb;
+            padding   : 2px 0px;
+
+            button.p-datepicker-next.p-link,
+            button.p-datepicker-prev.p-link {
+                background   : $cobalt-blue;
+                color        : #ffffff;
+                border-radius: 5px;
+                padding      : 2px 3px;
+                margin       : 2px 5px;
+                height       : rem(20);
+                width        : rem(20);
+
+                &:hover {
+                    background: $ge-blue;
+                    color     : #ffffff;
+                }
+            }
+
+            .p-datepicker-title {
+                @include display-flex('row');
+                @include browser-attr(justify-content, space-between);
+                @include browser-attr(align-items, center);
+            }
+
+            select.p-datepicker-month,
+            select.p-datepicker-year {
+                border-radius: 5px;
+                font-size    : rem(14);
+            }
+        }
+
+        .p-datepicker-calendar-container {
+            margin: 2px 8px;
+
+            table.p-datepicker-calendar {
+                thead {
+                    tr {
+                        th {
+                            padding: 0rem;
+                            width  : rem(27);
+                            margin : 0px;
+
+                            >span {
+                                font-family: $font-family;
+                                margin     : 0px;
+                                font-size  : rem(12);
+                                width      : rem(27);
+                                height     : rem(17);
+                                @include display-flex('row');
+                                @include browser-attr(justify-content, center);
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 0rem;
+                            width  : rem(27);
+
+                            >span {
+                                width : rem(27);
+                                height: rem(20);
+                                color : $midnight-black;
+                                @include display-flex('row');
+                                @include browser-attr(justify-content, center);
+
+                                &.p-highlight {
+                                    color     : #ffffff;
+                                    background: $ge-blue;
+                                }
+
+                                &:hover:not(.p-disabled) {
+                                    color     : $midnight-black;
+                                    background: #c9e0fb;
+                                }
+
+                                &.p-disabled {
+                                    color     : $fossil-gray;
+                                    background: $smoke-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
+
+.rep-search-date {
+
+    &__panela,
+    &__panelb {
+        &.p-datepicker.p-component {
+            background: $smoke-gray;
+            margin    : 2px 0px;
+            padding   : 0px;
+
+            .p-datepicker-calendar-container {
+                margin: 2px 8px;
+            }
+
+            table.p-datepicker-calendar {
+                thead {
+                    tr {
+                        th {
+                            >span {
+                                font-family: $font-family;
+                                @include display-flex('row');
+                                @include browser-attr(justify-content, center);
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            >span {
+                                color: $midnight-black;
+
+                                &.p-highlight {
+                                    color     : #ffffff;
+                                    background: $ge-blue;
+                                }
+
+                                &:hover:not(.p-disabled) {
+                                    color     : $midnight-black;
+                                    background: #c9e0fb;
+                                }
+
+                                &.p-disabled {
+                                    color     : $fossil-gray;
+                                    background: $smoke-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            button.p-datepicker-next,
+            button.p-datepicker-prev {
+                background   : #fff;
+                background   : $ge-blue;
+                color        : #ffffff;
+                border-radius: 5px;
+                padding      : 2px 3px;
+                margin       : 2px 5px;
+
+                &:hover {
+                    background: #ffffff;
+                    color     : $ge-blue;
+                }
+            }
+        }
+    }
+
+    &__style-class {
+        &.p-calendar {
+            input.rep-search-date__input {
+
+                border-radius   : 5px 0px 0px 5px;
+                border          : 2px solid;
+                border-right    : 0px;
+                width           : 100%;
+                min-width       : rem(90);
+                border-color    : $smoke-gray;
+                margin          : 0px;
+                height          : rem(30);
+                padding         : rem(2) rem(10) rem(2) rem(10);
+                background-color: $text-white;
+                color           : $midnight-black;
+                font-size       : $text-sizem4;
+                font-weight     : $font-bold;
+                line-height     : $text-sizel1;
+                color           : $midnight-black;
+                font-family     : $font-family;
+
+                &:focus {
+                    outline   : 0;
+                    box-shadow: 0 0 0 0rem #8dcdff;
+                }
+            }
+
+        }
+
+        button.p-datepicker-trigger.p-button.p-component {
+            padding      : 2px 10px;
+            background   : #fff;
+            border       : 2px solid $smoke-gray;
+            border-radius: 0px 5px 5px 0px;
+            border-left  : 0px;
+            color        : $fossil-gray;
+
+            &:focus {
+                outline   : 0;
+                box-shadow: 0 0 0 0rem #8dcdff;
+            }
+        }
+    }
+}
+
+.rep-search-date-order {
+
+    &__panela,
+    &__panelb {
+        &.p-datepicker.p-component {
+            background: $smoke-gray;
+            margin    : 2px 0px;
+            padding   : 0px;
+
+            .p-datepicker-calendar-container {
+                margin: 2px 8px;
+            }
+
+            table.p-datepicker-calendar {
+                thead {
+                    tr {
+                        th {
+                            >span {
+                                font-family: $font-family;
+                                @include display-flex('row');
+                                @include browser-attr(justify-content, center);
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            >span {
+                                color: $midnight-black;
+
+                                &.p-highlight {
+                                    color     : #ffffff;
+                                    background: $ge-blue;
+                                }
+
+                                &:hover:not(.p-disabled) {
+                                    color     : $midnight-black;
+                                    background: #c9e0fb;
+                                }
+
+                                &.p-disabled {
+                                    color     : $fossil-gray;
+                                    background: $smoke-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            button.p-datepicker-next,
+            button.p-datepicker-prev {
+                background   : #fff;
+                background   : $ge-blue;
+                color        : #ffffff;
+                border-radius: 5px;
+                padding      : 2px 3px;
+                margin       : 2px 5px;
+
+                &:hover {
+                    background: #ffffff;
+                    color     : $ge-blue;
+                }
+            }
+        }
+    }
+
+    &__style-class {
+        &.p-calendar {
+            input.rep-search-date-order__input {
+
+                border-radius   : 5px 0px 0px 5px;
+                border          : 2px solid;
+                border-right    : 0px;
+                width           : 100%;
+                min-width       : rem(90);
+                border-color    : $smoke-gray;
+                margin          : 0px;
+                height          : rem(30);
+                padding         : rem(2) rem(10) rem(2) rem(10);
+                background-color: $text-white;
+                color           : $midnight-black;
+                font-size       : $text-sizem2;
+                font-weight     : $font-bold;
+                line-height     : $text-sizem4;
+                color           : $midnight-black;
+                font-family     : $font-family;
+
+                &:focus {
+                    outline   : 0;
+                    box-shadow: 0 0 0 0rem #8dcdff;
+                }
+            }
+
+        }
+
+        button.p-datepicker-trigger.p-button.p-component {
+            padding      : 2px 10px;
+            background   : #fff;
+            border       : 2px solid $smoke-gray;
+            border-radius: 0px 5px 5px 0px;
+            border-left  : 0px;
+            color        : $fossil-gray;
+
+            &:focus {
+                outline   : 0;
+                box-shadow: 0 0 0 0rem #8dcdff;
+            }
+        }
+    }
+}

@@ -1,0 +1,262 @@
+.cust-header-dropdwn {
+    &__p-select {
+        .p-dropdown-label.p-inputtext.p-placeholder {
+            color      : $fossil-gray;
+            font-weight: $font-bold;
+        }
+
+        span.p-dropdown-trigger-icon.pi.pi-chevron-down {
+            color      : $fossil-gray;
+            font-weight: $font-bold;
+            font-size  : rem(12);
+        }
+
+        &.p-dropdown {
+            &.p-component {
+                display: flex;
+                width  : 100%;
+                @include browser-attr(background-color, #ffffff);
+                align-items  : center;
+                margin       : 0;
+                border       : 2px solid;
+                border-radius: 2px;
+                height       : rem(30);
+                border-color : $smoke-gray;
+                font-size    : rem(13);
+                font-weight  : $font-normal;
+                line-height  : rem(15);
+                color        : $fossil-gray;
+                padding      : rem(5) rem(0);
+                font-family  : $font-family;
+
+                .p-inputtext {
+                    color      : $midnight-black;
+                    font-weight: $font-bold;
+                    font-family: $font-family;
+                    font-size  : rem(13);
+                    line-height: rem(15);
+                    font-family: $font-family;
+                    padding    : 0px 10px 0px 0px;
+                }
+
+                &:not(.p-disabled).p-focus {
+                    border-bottom: 2px solid #ffffff;
+                    box-shadow   : 0 1px 0 0 #ffffff;
+                }
+            }
+        }
+    }
+
+    &__p-select-panel {
+        &.p-dropdown-panel.p-component {
+            @include browser-attr(background-color, $fog-gray);
+            // width: 320px;
+        }
+
+        li.p-dropdown-item {
+            padding           : 2px 8px 2px 10px;
+            margin            : 0px 2px;
+            font-size         : rem(13);
+            font-weight       : 400;
+            line-height       : rem(15);
+            color             : $midnight-black;
+            font-family       : $font-family;
+            -webkit-transition: border-color 0.1s ease, color 0.1s ease;
+            -moz-transition   : border-color 0.1s ease, color 0.1s ease;
+            -ms-transition    : border-color 0.1s ease, color 0.1s ease;
+            transition        : border-color 0.1s ease, color 0.1s ease;
+
+            &:hover {
+                @include browser-attr(background-color, #c9e0fb);
+                -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+                -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+                -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+                transition        : background-color 0.2s ease, color 0.2s ease;
+            }
+
+            &.p-highlight {
+                @include browser-attr(background-color, $ge-blue);
+                -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+                -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+                -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+                transition        : background-color 0.2s ease, color 0.2s ease;
+                color             : #ffffff;
+            }
+        }
+    }
+}
+
+.audit-item {
+    &.last-item {
+        .audit-timeline {
+            &.p-timeline.p-component {
+                >.p-timeline-event {
+                    min-height: rem(90);
+
+                    .p-timeline-event-separator {
+                        position: relative;
+
+                        .p-timeline-event-marker {
+                            width           : 11px;
+                            height          : 11px;
+                            background-color: $ge-blue;
+                            position        : absolute;
+                            left            : -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:not(.last-item) {
+        .audit-timeline {
+            &.p-timeline.p-component {
+                >.p-timeline-event {
+                    min-height: rem(90);
+
+                    .p-timeline-event-separator {
+                        position: relative;
+
+                        &::before {
+                            content    : "";
+                            border-left: 2px dotted $fossil-gray;
+                            height     : 100%;
+                        }
+
+                        .p-timeline-event-marker {
+                            width           : 11px;
+                            height          : 11px;
+                            background-color: $ge-blue;
+                            position        : absolute;
+                            left            : -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.audit-timeline {
+    &.p-timeline.p-component {
+        >.p-timeline-event {
+            .p-timeline-event-opposite {
+                padding: 0px 10px 0px 0px;
+                @include display-flex('row');
+                @include browser-attr(align-items, end);
+                max-width : rem(100);
+                margin-top: rem(-13);
+            }
+
+            .p-timeline-event-content {
+                padding: 0px 0px 0px 10px;
+                @include display-flex('row');
+                margin-top: rem(-13);
+            }
+
+            .p-timeline-event-separator {
+                .p-timeline-event-connector {
+                    width             : 2px;
+                    border-right-style: dotted;
+                    color             : white;
+                }
+
+                .p-timeline-event-marker {
+                    width           : 11px;
+                    height          : 11px;
+                    background-color: $ge-blue;
+                }
+            }
+        }
+    }
+}
+
+.cust-search-dropdwn {
+    &__p-select {
+        .p-dropdown-label.p-inputtext.p-placeholder {
+            color      : $fossil-gray;
+            font-weight: 400;
+        }
+
+        span.p-dropdown-trigger-icon.pi.pi-chevron-down {
+            color      : $fossil-gray;
+            font-weight: 600;
+            font-size  : rem(12);
+        }
+
+        &.p-dropdown {
+            &.p-component {
+                display: flex;
+                width  : 100%;
+                @include browser-attr(background-color, #ffffff);
+                align-items  : center;
+                margin       : 0;
+                border       : 2px solid;
+                border-radius: 2px;
+                height       : rem(30);
+                border-color : $smoke-gray;
+                font-size    : rem(14);
+                font-weight  : 400;
+                line-height  : rem(15);
+                color        : $fossil-gray;
+                padding      : rem(5) rem(0);
+                font-family  : $font-family;
+
+                .p-inputtext {
+                    color      : $midnight-black;
+                    font-weight: 500;
+                    font-family: $font-family;
+                    font-size  : rem(14);
+                    line-height: rem(15);
+                    font-family: $font-family;
+                    padding    : 0px 10px 0px 0px;
+                }
+
+                &:not(.p-disabled).p-focus {
+                    border-bottom: 2px solid #ffffff;
+                    box-shadow   : 0 1px 0 0 #ffffff;
+                }
+            }
+        }
+    }
+
+    &__p-select-panel {
+        &.p-dropdown-panel.p-component {
+            @include browser-attr(background-color, $fog-gray);
+            // width: 320px;
+        }
+
+        li.p-dropdown-item {
+            padding           : 2px 8px 2px 10px;
+            margin            : 0px 2px;
+            font-size         : rem(13);
+            font-weight       : 500;
+            line-height       : rem(15);
+            color             : $midnight-black;
+            font-family       : $font-family;
+            -webkit-transition: border-color 0.1s ease, color 0.1s ease;
+            -moz-transition   : border-color 0.1s ease, color 0.1s ease;
+            -ms-transition    : border-color 0.1s ease, color 0.1s ease;
+            transition        : border-color 0.1s ease, color 0.1s ease;
+
+            &:hover {
+                @include browser-attr(background-color, #c9e0fb);
+                -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+                -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+                -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+                transition        : background-color 0.2s ease, color 0.2s ease;
+            }
+
+            &.p-highlight {
+                @include browser-attr(background-color, $ge-blue);
+                -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+                -moz-transition   : background-color 0.2s ease, color 0.2s ease;
+                -ms-transition    : background-color 0.2s ease, color 0.2s ease;
+                transition        : background-color 0.2s ease, color 0.2s ease;
+                color             : #ffffff;
+            }
+        }
+    }
+}

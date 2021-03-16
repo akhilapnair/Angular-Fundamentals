@@ -1,0 +1,109 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$textcolor       : #2e2e2e;
+$titlecolor      : #28696d;
+$cyan            : #24aeb1;
+$primary         : #00adee;
+$linkcolor       : #0f61b2;
+$infocolor       : #3b8598;
+$approved        : #4caf50;
+$pending         : #fb8c00;
+$rejected        : #e53935;
+$orange          : #ff7d01;
+$danger          : #d62828;
+$success         : #00a73e;
+$yellow          : #ffd000;
+$error           : #fb0101;
+$grey            : #757575;
+$step-bg         : #dddcd7;
+$light-grey      : #f7f6f2;
+$btn-blue        : #1f67c4;
+$primary-blue    : #005eb8;
+$ge-blue         : #005eb8;
+$platinum-gray   : #b0aeae;
+$sky-blue        : #4285f4;
+$cobalt-blue     : #004cd9;
+$saphire-blue    : #007ad9;
+$fossil-gray     : #767676;
+$midnight-black  : #2e2e2e;
+$text-white      : #ffffff;
+$fog-gray        : #f3f3f3;
+$smoke-gray      : #ebebeb;
+$silver-gray     : #b2b2b2;
+$azure-blue      : #437eab;
+$royalblue       : #002664;
+$aqua-green-light: #56bea2;
+$aqua-green      : #00a87a;
+$mint-green-light: #3abe99;
+$mint-green      : #009169;
+$avocado-green   : #879820;
+$spring-green    : #2bb82b;
+$emerald-green   : #13910a;
+$grass-green     : #689f39;
+$pineapple-yellow: #d2c50c;
+$ruby-red        : #d7153a;
+$cherry-red      : #be0025;
+$midnight-black  : #2e2e2e;
+$nav-items       : #00b5e2;
+$btn-heading     : #005eb8;
+$em-base         : 15;
+$base            : 15px;
+$font-family     : 'Open Sans',sans-serif;
+// $font-family     : Segoe UI;
+$font-bolder     : 800;
+$font-bold       : 600;
+$font-normal     : 400;
+$footerHeight    : 52px;
+
+:root {
+  --textcolor    : #2e2e2e;
+  --titlecolor   : #28696d;
+  --cyan         : #24aeb1;
+  --primary      : #00adee;
+  --linkcolor    : #0f61b2;
+  --infocolor    : #3b8598;
+  --approved     : #4caf50;
+  --pending      : #fb8c00;
+  --rejected     : #e53935;
+  --orange       : #ff7d01;
+  --danger       : #d62828;
+  --success      : #00a73e;
+  --yellow       : #ffd000;
+  --error        : #fb0101;
+  --grey         : #757575;
+  --step-bg      : #dddcd7;
+  --light-grey   : #f7f6f2;
+  --textred      : #c70815;
+  --em-base      : 15;
+  --base         : 15px;
+  --headerheight : 60px;
+  --footerHeight : 40px;
+  --footerbg     : #f4f5f8;
+  --footerheading: #2e2e2e;
+  --footermenu   : #00b5e2;
+  --textgrey     : #8f8f8f;
+  --blue-heading : #005eb8;
+  --totalcommon  : #0f829e;
+  --highpriority : #e34242;
+  --barchart1    : #60c02a;
+  --barchart2    : #d7e243;
+  --barchart3    : #baba14;
+  --barchart4    : #da7949;
+  --barchart5    : #e74e4e;
+
+}
+
+$base-url: "src/assets/" !default;
+
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1590px);
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1560px);

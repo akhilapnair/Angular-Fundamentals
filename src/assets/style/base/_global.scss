@@ -1,0 +1,139 @@
+// -----------------------------------------------------------------------------
+// This file contains global styles.
+// -----------------------------------------------------------------------------
+
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  font-size: $base;
+  font-size: var(--base);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: var(--textcolor);
+  color: $textcolor;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+  line-height: 1;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+* {
+  table-layout: fixed;
+}
+
+*:focus {
+  outline: 0;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.no-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+select {
+  outline: none;
+  border: 0;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pi-times:before {
+  content: "X";
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.login-bg .form-group input {
+  height: 30px !important;
+  padding: 0px 5px !important;
+}
+.l-page-title {
+  color: var(--blue-heading);
+  font-size: rem(15);
+}
+.l-module-title {
+  color: var(--textcolor);
+  font-size: rem(15);
+}
+.l-total {
+  color: var(--totalcommon);
+}
+.l-high-priority {
+  color: var(--highpriority);
+}
+.small-text {
+  font-size: rem(12);
+}
+// Cards
+.cards {
+  box-shadow: 0 0px 9px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: rem(10);
+  width:100%;
+  border-radius: 12px;
+}
+.error {
+  color: #ff0000;
+  font-size: rem(11);
+  line-height: 1;
+}
+.required-flag {
+  color: #dd4b39 !important;
+}

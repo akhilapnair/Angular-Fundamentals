@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+// Convert pixels to em
+@function em($pxval, $base: $em-base) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+
+  @return $pxval / $base * 1em;
+}
+
+// Convert pixels to rem
+@function rem($size, $base: $em-base) {
+  $remSize: $size / $em-base;
+  @return #{$remSize}rem;
+}
